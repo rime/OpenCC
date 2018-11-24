@@ -31,7 +31,6 @@ DictPtr LoadDictionary(const string& format, const string& inputFileName) {
     fprintf(stderr, "Unknown dictionary format: %s\n", format.c_str());
     exit(2);
   }
-  return nullptr;
 }
 
 SerializableDictPtr ConvertDict(const string& format,
@@ -44,7 +43,6 @@ SerializableDictPtr ConvertDict(const string& format,
     fprintf(stderr, "Unknown dictionary format: %s\n", format.c_str());
     exit(2);
   }
-  return nullptr;
 }
 
 namespace opencc {
